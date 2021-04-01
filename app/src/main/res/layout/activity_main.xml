@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="12dp">
+    <!--    untuk gambar : resource ( drawable -> copy paste gambar )-->
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/kubus"
+        android:layout_width="128dp"
+        android:layout_height="128dp" />
+
+    <!--    untuk menghitung panjang-->
+    <TextView
+        android:text="Panjang :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:inputType="number"
+        android:id="@+id/panjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--    untuk lebar panjang-->
+
+    <TextView
+        android:text="Lebar :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:inputType="number"
+        android:id="@+id/lebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--    untuk menghitung tinggi-->
+
+    <TextView
+        android:text="Tinggi :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/tinggi"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--    untuk menghitung mentotal-->
+
+    <Button
+        android:id="@+id/hitung"
+        android:text="Coba hitung"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--    angka output dari total-->
+
+    <TextView
+        android:id="@+id/hasil"
+        tools:text="Total Volume"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
